@@ -3,6 +3,7 @@ class Unit{
 	public int currHealth;
 	public int totHealth;
 	public int level;
-	public int xLocation;
-	public int yLocation;
+	public int xLoc;
+	public int yLoc;
+	public int healthRegen;
 }

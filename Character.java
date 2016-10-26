@@ -5,6 +5,7 @@ class Character extends Unit{
 	private int currMana;
 	private int manaBoost;
 	private int exp;
+	private int manaRegen;
 	private Race race;
 	private Job job;
 	public static final int LEFT = 0;
@@ -12,20 +13,22 @@ class Character extends Unit{
 	public static final int UP = 2;
 	public static final int DOWN = 3;
 	
-	public Character(Race rc, Job jb, int xLoc, int yLoc){
+	public Character(Race rc, Job jb, int xLocation, int yLocation){
 		atk=rc.atk;
 		totHealth=rc.totHealth;
 		atkBoost=rc.atkBoost;
 		healthBoost=rc.healthBoost;
 		totMana=rc.mana;
 		manaBoost=rc.manaBoost;
+		manaRegen=rc.manaRegen;
+		healthRegen=rc.healthRegen;
 		level=1;
 		exp=0;
 		currMana=0;
 		race=rc;
 		job=jb;
-		xLocation=xLoc;
-		yLocation=yLoc;
+		xLoc=xLocation;
+		yLoc=yLocation;
 	}
 
 	public void increaseExp(int xp){

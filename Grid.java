@@ -7,5 +7,4 @@ class Grid{
 			}
 		}
 	}
-	public Grid
 }
